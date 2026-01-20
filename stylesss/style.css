@@ -396,38 +396,65 @@ iframe{
 
 
 
+/* footer */
+footer{
+    height: 412px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/footer-bg.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.footerPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: -80px;
+}
 
+.footerPart h3{
+    font-size: 80px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 0px;
 
+}
+.scl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.scl img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
+.icon2{
+    display: flex;
+    /* gap: 24px; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
 
+.scl p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cpy{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
 
 
 
@@ -516,7 +543,7 @@ iframe{
     
 
     .episodes h2{
-        font-size: 16px;
+        font-size: 32px;
     }
 
     .epCards{
@@ -542,4 +569,35 @@ iframe{
         align-items: center;
         justify-content: center;
     }
+
+    .footerPart h3{
+    font-size: 32px;
+    }
+
+    footer{
+        background-position: center;
+        background-position-y: 70px;
+        height: 100%;
+        min-height: 248px; 
+
+    }
+
+    .footerPart h3{
+        font-size: 32px;
+    }
+
+    .footerPart{
+        padding: 40px 40px;
+        min-height: 150px;
+        align-items: center;
+    }
+    .icon2{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+
 }
