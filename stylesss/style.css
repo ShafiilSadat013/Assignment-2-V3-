@@ -1,0 +1,75 @@
+.font-inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+body{
+    max-width: 1600px;
+    border: 1px solid wheat;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+
+/* navBar */
+
+header nav h3{
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.wave{
+    background: linear-gradient(
+    45deg,
+    #6d2dd3,
+    #c83cff,
+    #ff3cac
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn{
+    width: 135px;
+    height: 44px;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.btn:hover{
+    transform: scale(1.20);
+    transition: transform 200ms ease-in-out 0s;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.navbar ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+/* Hamburger hide for large devices */
+.burger{
+    display: none;
+}
