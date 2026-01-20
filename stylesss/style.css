@@ -507,4 +507,39 @@ iframe{
         grid-column: span 1;
         grid-row: span 1;
     }
+
+    .episodes {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+    
+
+    .episodes h2{
+        font-size: 16px;
+    }
+
+    .epCards{
+       grid-template-columns: repeat(1,1fr);
+    }
+    
+    .host-info{
+
+    background-color: #250D44;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
