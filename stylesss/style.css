@@ -73,3 +73,68 @@ header nav h3{
 .burger{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+
+    .navbar ul,
+    .subs{
+
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .navbar h3{
+        font-size: 16px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
