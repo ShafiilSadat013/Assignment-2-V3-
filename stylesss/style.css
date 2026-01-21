@@ -29,6 +29,41 @@ header nav h3{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.tw{
+
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #c83cff;
+  width: 0;
+  animation: typing 4s steps(8) infinite,
+            blink 0.7s step-end infinite;
+}
+
+@keyframes typing{
+  0%{
+
+    width: 0;
+  }
+  40%{
+
+    width: 9ch; 
+  }
+  60%{
+
+    width: 9ch;
+  }
+  100%{
+
+    width: 0;
+  }
+}
+@keyframes blink{
+  50%{
+
+    border-color: transparent;
+}
+}
 
 .btn{
     width: 135px;
@@ -36,17 +71,24 @@ header nav h3{
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     border-radius: 50px;
     display: flex;
+    border: none;
     align-items: center;
     justify-content: center;
     gap: 4px;
     color: white;
     font-weight: 600;
+    transition: box-shadow 0.3s ease;
 }
 
 .btn:hover{
     transform: scale(1.20);
     transition: transform 200ms ease-in-out 0s;
     cursor: pointer;
+      box-shadow:
+        0 0 10px #2b1172,
+        0 0 20px #c276ab,
+        0 0 40px #d6b8af;
+    
 }
 
 .navbar{
@@ -66,8 +108,20 @@ header nav h3{
     font-weight: 500;
     text-decoration: none;
     color: #FFFFFF;
-
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
 }
+
+.navbar ul li a:hover{
+    transform: scale(1.20);
+    transition: transform 200ms ease-in-out 0s;
+    cursor: pointer;
+      box-shadow:
+        0 0 10px #2b1172,
+        0 0 20px #c276ab,
+        0 0 40px #d6b8af;
+}
+
 
 /* Hamburger hide for large devices */
 .burger{
@@ -86,6 +140,27 @@ header nav h3{
     align-items: center;
 
 }
+
+.new{
+
+    position: relative;
+    top: -350px;
+    right: -130px;
+    cursor: pointer;
+    /* transition: box-shadow 0.3s ease; */
+
+}
+.new:hover{
+    
+    border-radius: 60px;
+    transform: scale(1.20);
+    transition: transform 200ms ease-in-out 0s;
+     box-shadow:
+        0 0 6px rgba(108, 255, 141, 0.6),
+        0 0 14px rgba(108, 255, 141, 0.4);
+        background: rgba(108, 255, 141, 0.08);
+}
+
 .banner-content{
     display: flex;
     flex-direction: column;
@@ -104,6 +179,20 @@ header nav h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.banner-img:hover{
+
+    border-radius: 50%;
+    transform: scale(1.20);
+    transition: transform 200ms ease-in-out 0s;
+    cursor: pointer;
+      box-shadow:
+        0 0 10px #2b1172,
+        0 0 20px #c276ab,
+        0 0 40px #d6b8af;
 }
 
 .banner-info h2{
@@ -112,10 +201,11 @@ header nav h3{
     font-weight: 800;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 4px;
 
 }
 .banner-info p{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     color: #FFFFFF;
     text-align: center;
@@ -136,9 +226,14 @@ header nav h3{
     align-items: center;
     gap: 4px;
     padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
     /* font-size: 16px;
     font-weight: 600; */
 }
+
+
 .btn2 p{
     font-size: 16px;
     font-weight: 600;
@@ -160,7 +255,20 @@ header nav h3{
     padding: 12px 20px;
     background-color: transparent;
     border-radius: 10000px;
+    cursor: pointer;
+    transition: 0.3 ease;
 }
+
+.btn3:hover{
+
+    transform: scale(1.20);
+    transition: transform 200ms ease-in-out 0s;
+     box-shadow:
+        0 0 6px rgba(108, 255, 141, 0.6),
+        0 0 14px rgba(108, 255, 141, 0.4);
+        background: rgba(108, 255, 141, 0.08);
+}
+
 .btn3 p{
     font-size: 16px;
     font-weight: 600;
@@ -261,6 +369,19 @@ header nav h3{
     justify-content: center;
     align-items: flex-start;
     gap: 16;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.card:hover{
+    transform: scale(1.20);
+    transition: transform 200ms ease-in-out 0s;
+    cursor: pointer;
+      box-shadow:
+        0 0 10px #2b1172,
+        0 0 20px #c276ab,
+        0 0 40px #d6b8af;
+    
 }
 
 .card h3{
@@ -352,6 +473,20 @@ iframe{
     font-weight: 600;
 }
 
+.epCard{
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.epCard:hover{
+    transform: scale(1.25);
+    border-color: #ff3c3c;
+    box-shadow:
+        0 0 0 2px rgba(255, 60, 60, 0.9),  
+        0 0 12px rgba(255, 60, 60, 0.7),
+        0 0 28px rgba(255, 60, 60, 0.5),
+        0 0 50px rgba(255, 60, 60, 0.35);
+}
 .host-info{
 
     background-color: #250D44;
@@ -359,6 +494,18 @@ iframe{
     border-radius: 30px;
     display: flex;
     gap: 15px;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.host-info:hover{
+     transform: scale(1.25);
+    border-color: #ff3c3c;
+    box-shadow:
+        0 0 0 2px rgba(255, 60, 60, 0.9),  
+        0 0 12px rgba(255, 60, 60, 0.7),
+        0 0 28px rgba(255, 60, 60, 0.5),
+        0 0 50px rgba(255, 60, 60, 0.35);
 }
 
 .host-inf h3{
@@ -428,6 +575,20 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.scl:hover{
+
+    border-radius: 50px;
+    padding: 5px;
+    transform: scale(1.20);
+    transition: transform 200ms ease-in-out 0s;
+    cursor: pointer;
+      box-shadow:
+        0 0 10px #2b1172,
+        0 0 20px #c276ab,
+        0 0 40px #d6b8af;
 }
 .scl img{
     width: 24px;
@@ -471,7 +632,7 @@ footer{
     }
 
     .navbar h3{
-        font-size: 16px;
+        font-size: 32px;
     }
     .navbar{
         display: flex;
@@ -598,6 +759,14 @@ footer{
         column-gap: 16px;
         row-gap: 16px;
     }
+
+    .new{
+
+    position: relative;
+    top: -200px;
+    right: -90px;
+
+   }
 
 
 }
